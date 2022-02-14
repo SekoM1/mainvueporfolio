@@ -1,0 +1,149 @@
+<template>
+  <section id="home">
+    <div class="container">
+      <img class="landing" src="../assets/landing.jpeg" alt="" />
+      <h3 style="text-shadow:2px 2px #262626f0">Hello, I'm</h3>
+      <h1 >N O M V U Y I S E K O</h1>
+      <h4  style="text-shadow:2px 2px #262626f0">Frontend Web Developer || UI/UX Designer.</h4>
+    </div>
+    <div class="header-social-links">
+      <a
+        data-toggle="tooltip"
+        title="instagram"
+        href="https://www.instagram.com/melachild_blvck/"
+        target="_blank"
+        class="fa fa-instagram"
+      ></a>
+      <a
+        data-toggle="tooltip"
+        title="linkedin"
+        href="https://www.linkedin.com/in/nomvuyiseko-mpofu-0a782b117/"
+        target="_blank"
+        class="fa fa-linkedin"
+      ></a>
+      <a
+        data-toggle="tooltip"
+        title="github"
+        href="https://github.com/SekoM1/PORTFOLIO"
+        target="_blank"
+        class="fa fa-github"
+      ></a>
+    </div>
+    <br /><br />
+    <button class="btn btn button rounded-pill"><a href="#about">EXPLORE</a></button>
+    <button class="btn btn button rounded-pill">
+      <a href="#contact">LET'S CONNECT</a>
+    </button>
+  </section>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style scoped>
+.landing {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 230px;
+  border: 8px double #8686e098;
+}
+
+
+#home {
+  min-height: 100vh;
+  /* min-width: 100vw; */
+  background: linear-gradient(
+      0deg,
+      rgba(243, 247, 193, 0.294),
+      rgba(44, 44, 44, 0.6)
+    ),
+    url(../assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#home h1{
+  font-size: 45px;
+  color: transparent !important;
+  -webkit-text-stroke: 2px  beige;
+  background: url(../assets/back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+  
+}
+@keyframes back{100%
+{
+  background-position: 2000px 0;
+}}
+
+/* social media btns */
+.fa-instagram {
+  background-color: #8686e0;
+
+  color: beige;
+  border-radius: 50%;
+}
+.fa-github {
+  background-color: #8686e0;
+
+  color: beige;
+  border-radius: 50%;
+}
+.fa-linkedin {
+  background-color: #8686e0;
+  color: beige;
+  border-radius: 50%;
+}
+.header-social-links .fa {
+  display: inline-block;
+  justify-content: space-around;
+  list-style: none;
+  margin: 15px 25px;
+  padding: 10px;
+  justify-content: end !important;
+}
+.social-links .fa {
+  display: inline-block;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0 15px;
+  padding: 10px;
+  /* justify-content: end !important; */
+}
+.fa:hover {
+  color: rgba(66, 22, 77, 0.699);
+}
+/* home buttons */
+.button {
+  border: none;
+  color: rgb(8, 8, 8);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 40px;
+  cursor: pointer;
+  width: 210px;
+  background-color:#8686e098 !important;
+}
+.button a {
+  text-decoration: none;
+  color: rgb(8, 8, 8);
+  font-size: small;
+}
+.button:hover {
+  background-color: rgba(245, 245, 220, 0.664)!important;
+  color: #000;
+}
+.button:hover a {
+  color: #000;
+}
+@media only screen and (min-width: 480px) {
+  .button {
+    margin-bottom: 30px;
+  }
+}
+</style>
