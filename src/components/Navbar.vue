@@ -1,13 +1,12 @@
 <template>
-  <section>
     
       <MDBNavbar expand="lg" light bg="light">
-        <!-- Toggle button -->
+
         <MDBNavbarToggler
           target="#navbarRightAlignExample"
           @click="collapse5 = !collapse5"
         ></MDBNavbarToggler>
-        <MDBNavbarBrand href="#index.html">
+        <MDBNavbarBrand href="#home">
           <img
             class="logo"
             src="../assets/logo.png"
@@ -16,10 +15,10 @@
             loading="lazy"
           />
         </MDBNavbarBrand>
-        <!-- Collapsible wrapper -->
+
         <MDBCollapse v-model="collapse5" id="navbarRightAlignExample">
           <MDBNavbarNav right class="mb-2 mb-lg-0">
-            <!-- Right links -->
+
             <MDBNavbarItem href="#home" active> Home </MDBNavbarItem>
             <MDBNavbarItem href="#about" active> About </MDBNavbarItem>
             <MDBNavbarItem href="#resume" active> Resume </MDBNavbarItem>
@@ -28,7 +27,6 @@
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
-  </section>
 </template>
 
 <script>

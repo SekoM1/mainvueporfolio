@@ -1,11 +1,11 @@
 <template>
-<Navbar/>
-<Landing/>
-<About/>
-<Resume/>
-<Projects/>
-<Contact/>
-<Footer/>
+<Navbar />
+<Landing />
+<About />
+<Resume />
+<Projects />
+<Contact />
+<Footer />
 </template>
 
 <script>
@@ -47,7 +47,7 @@ li {
 }
 .section-title {
   text-align: center;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 h2 {
   color: rgb(14, 13, 13);

@@ -13,7 +13,7 @@
               query.
             </p>
 
-            <form @submit="submitForm">
+            <form @submit.prevent="submitForm">
               <div class="row">
                 <div class="col-sm-6">
                   <div class="form-group">
@@ -75,35 +75,40 @@
 
 <script>
 export default {
-  data(){
+  data() {
     return {
-      
       name: null,
       lastName: null,
       email: null,
-      message: null
-    }
+      message: null,
+    };
   },
   methods: {
     submitForm() {
-     const res = fetch('https://sekos-api-project.herokuapp.com/contact', {
-      method: "POST",
-      headers: {"Content-type": "application/json; charset=UTF-8"},
+      console.log(this.name, this.lastName, this.email, this.message)
+       fetch("https://sekos-api-project.herokuapp.com/contact", {
+        method: "POST",
+        headers: { "Content-type": "application/json; charset=UTF-8" },
 
-      body: JSON.stringify({
-        name: this.name,
-        lastName: this.lastName,
-        email: this.email,
-        message: this.message
+        body: JSON.stringify({
+          name: this.name,
+          lastName: this.lastName,
+          email: this.email,
+          message: this.message,
+        }),
       })
-    })
-    .then(response => response.json())
-    .then(json => console.log(json))
-    .catch(err => console.log(err))
-    }
-    }
-        
-}
+        .then((response) => response.json())
+        .then((json) => {
+          console.log(json);
+          (this.name = ""),
+            (this.lastName = ""),
+            (this.email = ""),
+            (this.message = "");
+        })
+        .catch((err) => console.log(err));
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -114,7 +119,7 @@ export default {
 }
 form {
   max-width: 720px;
-  margin: 10px;
+  margin-left: 90px;
   background: transparent;
   text-align: left;
   padding: 40px;
@@ -138,7 +143,9 @@ input {
   background: none;
   outline: none;
 }
-.form-control .textarea{outline: none;}
+.form-control .textarea .form-group {
+  outline: none;
+}
 
 /* input:focus,
 form:focus,
@@ -166,7 +173,5 @@ form:focus,
 }
 .form-group {
   padding-bottom: 40px;
-  
 }
-
 </style>

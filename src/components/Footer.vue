@@ -9,7 +9,7 @@
       </div>
 
       <div class="copyright">
-        © Copyright <strong><span>Nomvuyiseko</span></strong>. All Rights Reserved
+        © 2022 Copyright <strong><span>Nomvuyiseko</span></strong>. All Rights Reserved
       </div>
 
     </div>

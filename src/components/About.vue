@@ -1,5 +1,6 @@
 <template>
-  <div id="about" class="about" style="padding-top:30px;">
+<section>
+  <div id="about" style="padding-top:30px;">
     <div class="container aos-init aos-animate" data-aos="fade-up">
 
       <div class="row">
