@@ -114,6 +114,9 @@ export default {};
 }
 .fa:hover {
   color: rgba(66, 22, 77, 0.699);
+  border-bottom: none;
+  list-style: none;
+  
 }
 /* home buttons */
 .button {

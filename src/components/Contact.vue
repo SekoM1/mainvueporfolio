@@ -100,10 +100,7 @@ export default {
         .then((response) => response.json())
         .then((json) => {
           console.log(json);
-          (this.name = ""),
-            (this.lastName = ""),
-            (this.email = ""),
-            (this.message = "");
+        
         })
         .catch((err) => console.log(err));
     },
