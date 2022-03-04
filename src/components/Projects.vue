@@ -72,6 +72,8 @@ export default {
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
+  
+  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
 }
 .project {
   background-color: beige;
@@ -112,7 +114,9 @@ export default {
   border-radius: 0;
   display: inline-flex;
 }
-
+.card-body{
+  height: 250px;
+}
 .card {
   /* position: relative; */
   /* display: flex; */
@@ -133,10 +137,10 @@ export default {
     display: inline-block;
   } */
   .card-body {
-    height: 365px;
+    height: 265px;
   }
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1200px) {
   /* .qhosha {
     margin: 4px 4px;
     cursor: pointer;
