@@ -162,6 +162,10 @@ form:focus,
   font-weight: bold;
   text-align: center !important;
   border-bottom: none;
+
+}
+.butt:hover {
+  transform: scale(1.5s);
 }
 .form-control {
   border-radius: none;

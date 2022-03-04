@@ -53,7 +53,7 @@
                 <a href="#home" class="nav-link active">
                     Home
                 </a>
-            </li>
+            </li> 
             <li class="nav-item">
                 <a href="#about" class="nav-link active">
                     About

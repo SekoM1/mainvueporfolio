@@ -135,6 +135,7 @@ export default {};
   text-decoration: none;
   color: rgb(8, 8, 8);
   font-size: small;
+  transform: scale(1.5s);
 }
 .button:hover {
   background-color: rgba(245, 245, 220, 0.664) !important;
@@ -142,6 +143,7 @@ export default {};
 }
 .button:hover a {
   color: #000;
+  transform: scale(1.5);
 }
 @media only screen and (min-width: 480px) {
   .button {
