@@ -1,32 +1,4 @@
 <template>
-<!--     
-      <MDBNavbar expand="lg" light bg="light">
-
-        <MDBNavbarToggler
-          target="#navbarRightAlignExample"
-          @click="collapse5 = !collapse5"
-        ></MDBNavbarToggler>
-        <MDBNavbarBrand href="#home">
-          <img
-            class="logo"
-            src="../assets/logo.png"
-            height="100"
-            alt=""
-            loading="lazy"
-          />
-        </MDBNavbarBrand>
-
-        <MDBCollapse v-model="collapse5" id="navbarRightAlignExample">
-          <MDBNavbarNav right class="mb-2 mb-lg-0">
-
-            <MDBNavbarItem href="#home" active> Home </MDBNavbarItem>
-            <MDBNavbarItem href="#about" active> About </MDBNavbarItem>
-            <MDBNavbarItem href="#resume" active> Resume </MDBNavbarItem>
-            <MDBNavbarItem href="#projects" active> Projects </MDBNavbarItem>
-            <MDBNavbarItem href="#contact" active> Contact </MDBNavbarItem>
-          </MDBNavbarNav>
-        </MDBCollapse>
-      </MDBNavbar> -->
 
 
 <nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top">
@@ -96,8 +68,8 @@
 
 }
 .logo {
-  height: 90px;
-  width: 90px;
+  height: 75px;
+  width: 75px;
   border-radius: 50%;
   border: 4px solid #8686e098;
 }
@@ -114,14 +86,14 @@ a.nav-link.active{
   backface-visibility: visible;
   background-color: #afaca375;
 }
-/* @media screen and (max-width: 400px) {
+ @media screen and (max-width: 400px) {
   .logo {
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
   }
 }
-@media screen and (min-width: 990px) {
+/* @media screen and (min-width: 990px) {
   .navbar-brand {
     padding-left: 5%;
   }

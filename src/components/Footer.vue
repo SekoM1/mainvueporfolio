@@ -52,6 +52,7 @@
   margin: 15px 25px;
   padding: 10px;
   justify-content: end !important;
+  
 }
 .social-links .fa {
   display: inline-block;
@@ -60,6 +61,7 @@
   margin: 0 15px;
   padding: 10px;
   justify-content: end !important;
+  text-decoration: none;
 }
 .fa:hover {
   color: rgba(66, 22, 77, 0.699);

@@ -1,54 +1,67 @@
 <template>
   <section id="projects" class="project" style="padding-top: 30px">
-   <div class="setion-title" style="margin-top: 120px">
-       <h2>MY PROJECTS</h2>
-   </div>
+    <div class="setion-title" style="margin-top: 120px">
+      <h2>MY PROJECTS</h2>
+    </div>
 
-<div class="container mx-auto mt-4">
+    <div class="container mx-auto mt-4">
       <div class="row" style="margin-bottom: 100px" v-if="projects">
-  <ul class="cards"  v-if="projects">  
-    <li class="cards_item">
-      <div 
-       v-for="project of projects"
-          :key="project.title"
-      class="card">
-        <div class="card_image"><img :src="project.img"></div>
-        <div class="card_content">
-          <h2 class="card_title">{{ project.title }}</h2>
-          <p class="card_text">{{ project.techStacks }}</p>
-          <!-- <button class="btn card_btn">Read More</button> -->
-            <div class="btn card_btn">
+        <ul class="cards" v-if="projects">
+          <li class="cards_item">
+            <div v-for="project of projects" :key="project.title" class="card">
+              <div class="card_image"><img :src="project.img" /></div>
+              <div class="card_content">
+                <h2 class="card_title">{{ project.title }}</h2>
+                <p class="card_text">{{ project.techStacks }}</p>
+                <!-- <button class="btn card_btn">Read More</button> -->
+                <div class="btn card_btn">
                   <!-- <button class="qhosha" target="blank"> -->
-                  <a target="blank" class="" :href="project.github"><img src="https://img.icons8.com/glyph-neue/20/000000/github.png"/>
+                  <a target="blank" class="" :href="project.github"
+                    ><img
+                      src="https://img.icons8.com/glyph-neue/20/000000/github.png"
+                    />
                   </a>
                   <!-- </button> -->
 
                   <!-- <button class="qhosha" target="blank"> -->
                   <a target="blank" class="" :href="project.live">
-                    <img src="https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/20/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-tritone-tal-revivo.png"/>
-                    </a>
+                    <img
+                      src="https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/20/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-tritone-tal-revivo.png"
+                    />
+                  </a>
                   <!-- </button> -->
                 </div>
-        </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-    </li>
-  </ul>
-      </div>
-
-  <div v-else>Loading Projects...</div>
+    </div>
   </section>
-
 </template>
 
 <script>
 export default {
-
-}
+  data() {
+    return {
+      projects: null,
+    };
+  },
+  mounted() {
+    fetch("https://sekos-api-project.herokuapp.com/projects")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        this.projects = data;
+      })
+      .catch((e) => console.log(e));
+  },
+};
 </script>
 
 <style>
 /* Font */
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
 
 /* Design */
 *,
@@ -63,22 +76,22 @@ html {
 
 body {
   color: #272727;
-  font-family: 'Quicksand', serif;
+  font-family: "Quicksand", serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
   padding: 1rem;
 }
 
-.main{
+.main {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 h1 {
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
 }
 
 img {
@@ -141,7 +154,7 @@ img {
 
 .card_content {
   padding: 1rem;
-  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+  background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%);
 }
 
 .card_title {
@@ -157,10 +170,10 @@ img {
   color: #ffffff;
   font-size: 0.875rem;
   line-height: 1.5;
-  margin-bottom: 1.25rem;    
+  margin-bottom: 1.25rem;
   font-weight: 400;
 }
-.made_by{
+.made_by {
   font-weight: 400;
   font-size: 13px;
   margin-top: 35px;

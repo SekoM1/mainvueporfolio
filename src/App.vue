@@ -1,40 +1,41 @@
 <template>
-<Navbar />
-<Landing />
-<About />
-<Resume />
-<Projects />
-<Contact />
-<Footer />
+  <Navbar />
+  <Landing />
+  <About />
+  <Resume />
+  <Mywork />
+  <!-- <Projects /> -->
+  <Contact />
+  <Footer />
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue'
-import Landing from './components/Landing.vue'
-import About from './components/About.vue'
-import Resume from './components/Resume.vue'
-import Contact from './components/Contact.vue'
-import Footer from './components/Footer.vue'
-import Projects from './components/Projects.vue'
+import Navbar from "./components/Navbar.vue";
+import Landing from "./components/Landing.vue";
+import About from "./components/About.vue";
+import Resume from "./components/Resume.vue";
+import Contact from "./components/Contact.vue";
+import Footer from "./components/Footer.vue";
+// import Projects from "./components/Projects.vue";
+import Mywork from "./components/Mywork.vue"
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Navbar, 
+    Navbar,
     Landing,
     About,
     Resume,
-    Contact, 
+    Contact,
     Footer,
-   Projects,
-    
-  }
-}
+    // Projects,
+    Mywork
+  },
+};
 </script>
 
 <style>
-
 #app {
-  font-family: 'poppins', Helvetica, Arial, sans-serif;
+  font-family: "poppins", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -42,8 +43,8 @@ export default {
   overflow-x: hidden;
 }
 li {
-    list-style: none;
-    color: rgb(14, 13, 13);
+  list-style: none;
+  color: rgb(14, 13, 13);
 }
 .section-title {
   text-align: center;
@@ -56,8 +57,6 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   position: relative;
-  
- 
 }
 h2::after {
   content: "";
@@ -70,9 +69,7 @@ h2::after {
   right: 0;
   bottom: -10px;
 }
-p{
+p {
   color: black;
-  
 }
-
 </style>

@@ -103,6 +103,7 @@ export default {};
   margin: 15px 25px;
   padding: 10px;
   justify-content: end !important;
+  text-decoration: none;
 }
 .social-links .fa {
   display: inline-block;
