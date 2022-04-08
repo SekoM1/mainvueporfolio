@@ -52,7 +52,6 @@ export default {};
 
 #home {
   min-height: 100vh;
-  /* min-width: 100vw; */
   background: linear-gradient(
       0deg,
       rgba(243, 247, 193, 0.294),
@@ -111,7 +110,6 @@ export default {};
   list-style: none;
   margin: 0 15px;
   padding: 10px;
-  /* justify-content: end !important; */
 }
 .fa:hover {
   color: rgba(66, 22, 77, 0.699);

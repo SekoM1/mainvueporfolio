@@ -60,11 +60,6 @@
   background: rgb(250, 255, 221) !important;
   box-shadow: 0 0 25px 0 rgba(7, 7, 7, 0.37);
   position: fixed !important;
-/* 
-  left: 0 !important;
-  top: 0 !important;
-  width: 100% !important;
-  z-index: 3; */
 
 }
 .logo {
@@ -74,7 +69,7 @@
   border: 4px solid #8686e098;
 }
 .navbar-dark .nav-link.active:hover {
-  /* color: #080808; */
+
   border-bottom: 2px solid rgba(101, 20, 114, 0.548);
 }
 a.nav-link.active{
@@ -93,13 +88,4 @@ a.nav-link.active{
     border-radius: 50%;
   }
 }
-/* @media screen and (min-width: 990px) {
-  .navbar-brand {
-    padding-left: 5%;
-  }
-  .navbar-expand-lg .navbar-collapse {
-    padding-right: 5%;
-  }
-
-} */
 </style>

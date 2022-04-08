@@ -72,7 +72,6 @@ export default {
 .card-body{
   background-color: #FFFFFF;
   box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.2);
-  /* font-family: 'Lora', serif; */
   margin: 25px 0;
   min-height: 515px;
   overflow: hidden;
@@ -100,8 +99,6 @@ export default {
   overflow: hidden;
 }
 .card-body img{
-  /* height: auto;
-  object-position: center center; */
   width: 100%;
 }
 .card-body .card-text{
@@ -124,7 +121,6 @@ export default {
   }
 }
 .card-text p.tag{
-  /* font-family: 'Lato', sans-serif; */
   font-size: .75rem;
   color: #898989;
   letter-spacing: 3px;
@@ -151,7 +147,6 @@ export default {
   border-radius: 25px;
   color: #a454bca7;;
   cursor: pointer;
-  /* font-family: 'Lato', sans-serif; */
   font-size: .85rem;
   font-weight: bold;
   margin-top: 15px;

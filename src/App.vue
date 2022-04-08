@@ -4,7 +4,6 @@
   <About />
   <Resume />
   <Mywork />
-  <!-- <Projects /> -->
   <Contactform />
   <Footer />
 </template>
