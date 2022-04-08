@@ -5,7 +5,7 @@
   <Resume />
   <Mywork />
   <!-- <Projects /> -->
-  <Contact />
+  <Contactform />
   <Footer />
 </template>
 
@@ -14,10 +14,10 @@ import Navbar from "./components/Navbar.vue";
 import Landing from "./components/Landing.vue";
 import About from "./components/About.vue";
 import Resume from "./components/Resume.vue";
-import Contact from "./components/Contact.vue";
+import Contactform from "./components/Contactform.vue";
 import Footer from "./components/Footer.vue";
-// import Projects from "./components/Projects.vue";
 import Mywork from "./components/Mywork.vue"
+
 export default {
   name: "App",
   components: {
@@ -25,9 +25,8 @@ export default {
     Landing,
     About,
     Resume,
-    Contact,
+    Contactform,
     Footer,
-    // Projects,
     Mywork
   },
 };
